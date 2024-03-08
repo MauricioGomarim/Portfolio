@@ -27,7 +27,7 @@ body {
 }
 
 .container {
-  max-width: 1600px;
+  max-width: 100%;
   width: 100%;
   position: relative;
   font-size: 2rem;
@@ -288,21 +288,24 @@ section {
 }
 
 .github img {
-  max-width: 600px;
+  max-width: 450px;
   width: 90%;
+  object-fit: contain;
+}
 
-  height: 26rem;
+.github svg {
+  max-width: 450px;
 }
 
 .github {
-
+  justify-content: center;
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0 2rem;
 
-
+gap: 40px;
 
 }
 
@@ -380,7 +383,10 @@ footer span {
   .github {
     flex-direction: initial;
     width: 90%;
+    gap: 40px;
   }
+
+
 
 }
 
